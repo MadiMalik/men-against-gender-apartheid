@@ -7,9 +7,11 @@ A modern React application for the Men Against Gender Apartheid campaign, featur
 - **Animated Hero Section**: GSAP-powered animations for the main title and Farsi text
 - **Responsive Design**: Mobile-first approach with Tailwind CSS
 - **Interactive Menu**: Hamburger menu with smooth scrolling navigation
-- **Section Components**: Modular sections for Why, What, How, Who, Act Now, Resources, and About
+- **Section Components**: Modular sections for Why, What, How, Who, Act Now, Resources, About, and Contact
 - **Accordion FAQ**: Interactive accordion in the How section
+- **Contact Form**: Functional contact form with validation
 - **Modern UI**: Clean, professional design with consistent typography
+- **Dynamic Color Scheme**: Dark blue and white theme with automatic menu color adaptation
 
 ## Technologies Used
 
@@ -64,7 +66,8 @@ src/
 │   ├── WhoSection.jsx        # Who section component
 │   ├── ActNowSection.jsx     # Call-to-action section
 │   ├── ResourcesSection.jsx  # Resources section
-│   └── AboutSection.jsx      # About section
+│   ├── AboutSection.jsx      # About section
+│   └── ContactSection.jsx    # Contact form section
 ├── App.jsx                   # Main application component
 ├── index.jsx                 # Application entry point
 └── index.css                # Global styles with Tailwind
@@ -75,7 +78,9 @@ src/
 ### Colors
 The color scheme is defined in `tailwind.config.js`:
 - Primary: `#2d5dc0` (blue)
-- Dark: `#020d1f` (dark blue)
+- Dark Blue: `#0f172a` (main background for dark sections)
+- Navy: `#1e293b` (hover states)
+- Deep Blue: `#0f1419` (alternative dark blue)
 
 ### Animations
 GSAP animations are configured in the `Hero.jsx` component. You can modify timing, easing, and effects in the `useEffect` hook.

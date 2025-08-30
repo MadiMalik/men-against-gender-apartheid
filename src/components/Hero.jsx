@@ -34,7 +34,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="min-h-screen bg-black text-white flex items-center justify-center">
+    <section id="hero" className="min-h-screen bg-dark-blue text-white flex items-center justify-center">
       <div className="text-right space-y-2 px-4 sm:px-8 md:px-12 lg:px-20 max-w-2xl mb-6" dir="rtl">
         <h1 ref={faLine1Ref} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
           <span className="text-primary">م</span>ردان

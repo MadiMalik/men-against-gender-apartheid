@@ -8,6 +8,7 @@ import WhoSection from './components/WhoSection.jsx';
 import ActNowSection from './components/ActNowSection.jsx';
 import ResourcesSection from './components/ResourcesSection.jsx';
 import AboutSection from './components/AboutSection.jsx';
+import ContactSection from './components/ContactSection.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ActNowSection />
       <ResourcesSection />
       <AboutSection />
+      <ContactSection />
     </div>
   );
 }

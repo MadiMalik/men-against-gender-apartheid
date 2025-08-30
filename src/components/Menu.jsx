@@ -23,14 +23,15 @@ const Menu = () => {
   // Function to determine menu color based on current section
   const getMenuColor = () => {
     const sections = [
-      { id: 'hero', bgColor: 'black' },
+      { id: 'hero', bgColor: 'dark-blue' },
       { id: 'why', bgColor: 'white' },
       { id: 'what', bgColor: 'white' },
-      { id: 'how', bgColor: 'black' },
+      { id: 'how', bgColor: 'dark-blue' },
       { id: 'who', bgColor: 'white' },
-      { id: 'act', bgColor: 'black' },
+      { id: 'act', bgColor: 'dark-blue' },
       { id: 'resources', bgColor: 'white' },
-      { id: 'about', bgColor: 'black' }
+      { id: 'about', bgColor: 'dark-blue' },
+      { id: 'contact', bgColor: 'white' }
     ];
 
     const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -43,7 +44,7 @@ const Menu = () => {
         const elementBottom = elementTop + rect.height;
 
         if (scrollPosition >= elementTop && scrollPosition <= elementBottom) {
-          return section.bgColor === 'black' ? 'text-white' : 'text-black';
+          return section.bgColor === 'dark-blue' ? 'text-white' : 'text-dark-blue';
         }
       }
     }
@@ -77,7 +78,7 @@ const Menu = () => {
 
       {/* Overlay Menu */}
       <div 
-        className={`fixed inset-0 bg-black bg-opacity-100 z-40 flex flex-col items-start px-8 pt-8 transition-transform duration-300 ${
+        className={`fixed inset-0 bg-dark-blue bg-opacity-100 z-40 flex flex-col items-start px-8 pt-8 transition-transform duration-300 ${
           isOpen ? 'transform translate-x-0' : 'transform -translate-x-full'
         }`}
       >
@@ -138,6 +139,12 @@ const Menu = () => {
             className="block text-3xl font-extrabold uppercase text-left w-full text-white"
           >
             About
+          </button>
+          <button 
+            onClick={() => scrollToSection('contact')}
+            className="block text-3xl font-extrabold uppercase text-left w-full text-white"
+          >
+            Contact
           </button>
         </nav>
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhatSection = () => {
   return (
-    <section id="what" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-white text-black">
+    <section id="what" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-white text-dark-blue">
       <div className="md:w-1/3 w-full mb-8 md:mb-0">
         <h2 className="text-7xl font-extrabold uppercase">WHAT</h2>
       </div>

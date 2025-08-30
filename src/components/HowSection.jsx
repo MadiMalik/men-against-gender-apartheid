@@ -21,7 +21,7 @@ const HowSection = () => {
   };
 
   return (
-    <section id="how" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-black text-white">
+    <section id="how" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-dark-blue text-white">
       <div className="md:w-1/3 w-full mb-8 md:mb-0">
         <h2 className="text-7xl font-extrabold uppercase">HOW</h2>
       </div>

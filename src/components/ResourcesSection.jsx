@@ -2,7 +2,7 @@ import React from 'react';
 
 const ResourcesSection = () => {
   return (
-    <section id="resources" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-white text-black min-h-screen">
+    <section id="resources" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-white text-dark-blue min-h-screen">
       <div className="md:w-1/3 w-full mb-8 md:mb-0">
         <h2 className="text-7xl font-extrabold uppercase">RESOURCES</h2>
       </div>
