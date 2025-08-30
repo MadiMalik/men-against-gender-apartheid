@@ -21,22 +21,22 @@ const HowSection = () => {
   };
 
   return (
-    <section id="how" className="w-full flex flex-col md:flex-row items-start justify-center py-16 px-4 md:px-16 bg-dark-blue text-white">
-      <div className="md:w-1/3 w-full mb-8 md:mb-0">
-        <h2 className="text-7xl font-extrabold uppercase">HOW</h2>
+    <section id="how" className="w-full flex flex-col lg:flex-row items-start justify-center py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 bg-dark-blue text-white">
+      <div className="lg:w-1/3 w-full mb-6 sm:mb-8 lg:mb-0">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase leading-tight">HOW</h2>
       </div>
-      <div className="md:w-2/3 w-full md:pl-16 space-y-8">
+      <div className="lg:w-2/3 w-full lg:pl-8 xl:pl-16 space-y-4 sm:space-y-6 lg:space-y-8">
         {accordionItems.map((item) => (
           <div key={item.id} className="bg-white text-black rounded shadow cursor-pointer">
             <div 
-              className="flex justify-between items-center p-6 text-2xl font-bold"
+              className="flex justify-between items-start p-4 sm:p-6 text-lg sm:text-xl md:text-2xl font-bold"
               onClick={() => toggleAccordion(item.id)}
             >
-              <span>{item.question}</span>
-              <span className="text-3xl">{openAccordion === item.id ? '−' : '+'}</span>
+              <span className="pr-4 leading-tight">{item.question}</span>
+              <span className="text-2xl sm:text-3xl flex-shrink-0">{openAccordion === item.id ? '−' : '+'}</span>
             </div>
-            <div className={`px-6 pb-6 transition-all duration-300 ${openAccordion === item.id ? 'block' : 'hidden'}`}>
-              <p className="text-lg">{item.answer}</p>
+            <div className={`px-4 sm:px-6 pb-4 sm:pb-6 transition-all duration-300 ${openAccordion === item.id ? 'block' : 'hidden'}`}>
+              <p className="text-sm sm:text-base md:text-lg leading-relaxed">{item.answer}</p>
             </div>
           </div>
         ))}

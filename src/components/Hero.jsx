@@ -34,37 +34,39 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="min-h-screen bg-dark-blue text-white flex items-center justify-center">
-      <div className="text-right space-y-2 px-4 sm:px-8 md:px-12 lg:px-20 max-w-2xl mb-6" dir="rtl">
-        <h1 ref={faLine1Ref} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
+    <section id="hero" className="min-h-screen bg-dark-blue text-white flex flex-col lg:flex-row items-center justify-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-20 py-8 lg:py-0">
+      {/* Farsi Text */}
+      <div className="text-right space-y-1 sm:space-y-2 lg:space-y-2 px-2 sm:px-4 lg:px-8 mb-6 lg:mb-0 lg:mr-8 max-w-xs sm:max-w-sm lg:max-w-md" dir="rtl">
+        <h1 ref={faLine1Ref} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
           <span className="text-primary">م</span>ردان
         </h1>
-        <h1 ref={faLine2Ref} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
+        <h1 ref={faLine2Ref} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
           <span className="text-primary">ع</span>لیه
         </h1>
-        <h1 ref={faLine3Ref} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
+        <h1 ref={faLine3Ref} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
           <span className="text-primary">آ</span>پارتاید
         </h1>
-        <h1 ref={faLine4Ref} className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
+        <h1 ref={faLine4Ref} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-tight">
           <span className="text-primary">ج</span>نسیتی
         </h1>
       </div>
 
-      <div className="text-left space-y-4 px-4 sm:px-8 md:px-12 lg:px-20 max-w-2xl">
-        <h1 ref={line1Ref} className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold">
+      {/* English Text */}
+      <div className="text-left space-y-2 sm:space-y-3 lg:space-y-4 px-2 sm:px-4 lg:px-8 max-w-xs sm:max-w-sm lg:max-w-md xl:max-w-lg">
+        <h1 ref={line1Ref} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold leading-tight">
           <span className="text-primary">M</span>EN
         </h1>
-        <h1 ref={line2Ref} className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold">
+        <h1 ref={line2Ref} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold leading-tight">
           <span className="text-primary">A</span>GAINST
         </h1>
-        <h1 ref={line3Ref} className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold">
+        <h1 ref={line3Ref} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold leading-tight">
           <span className="text-primary">G</span>ENDER
         </h1>
-        <h1 ref={line4Ref} className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold">
+        <h1 ref={line4Ref} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-extrabold leading-tight">
           <span className="text-primary">A</span>PARTHEID
         </h1>
 
-        <p ref={subtitleRef} className="text-gray-300 text-sm sm:text-base border-t border-white pt-4">
+        <p ref={subtitleRef} className="text-gray-300 text-xs sm:text-sm md:text-base border-t border-white pt-2 sm:pt-3 lg:pt-4 mt-4 sm:mt-6">
           MAGA – Allies Advocating to End Gender Apartheid
         </p>
       </div>
